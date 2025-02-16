@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './footer.module.scss';
-
+import Link from "next/link";
 interface FooterLink {
   title: string;
   href: string;
@@ -81,7 +81,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <button className={styles.topbtn}>GET STARTED</button>
+        <Link href="/signup" className={styles.btn}>
+        <button className={styles.topbtn}>GET STARTED</button>
+          </Link>
         </div>
       </div>
       <main className={styles.main}>

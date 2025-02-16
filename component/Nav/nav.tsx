@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import styles from './nav.module.scss';
+import Link from "next/link";
+
+
 
 const Navbar = () => {
   return (
@@ -31,9 +34,11 @@ const Navbar = () => {
 
         <div className={styles.side}>
           <a href="/">Login</a>
+          <Link href="/signup" className={styles.btn}>
           <button className={styles.btn}>
             <span>Get started</span>
           </button>
+          </Link>
           <a href="/">
             <img src="/icon.png" className={styles.search} />
           </a>
